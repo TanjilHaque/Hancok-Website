@@ -129,6 +129,15 @@ img {
 .globe__icon, .search__icon{
     cursor: pointer;
 }
+.hover--change{
+    transition: 0.3s ease-in-out;
+}
+.hover--change:hover{
+    font-size: 30px;
+}
+.navbar__right .sign__in .signIn__text:hover{
+    font-size: 24px;
+}
 
 
 
