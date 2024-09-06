@@ -59,7 +59,9 @@ img {
 
 /* ===================================Navbar CSS====================================== */
 #navbar{
-    padding: 25px;
+    padding: 25px 0px;
+    width: 1920px;
+    margin: 0 auto;
 }
 .navbar__wrapper{
     display: flex;
@@ -74,6 +76,7 @@ img {
     font-family: var(--barlow__font);
     font-weight: 700;
     font-size: 35px;
+    line-height: auto;
 }
 .navbar__logo .hancok::after {
     position: absolute;
@@ -125,34 +128,26 @@ img {
     font-family: var(--oswald__font);
     font-size: 16px;
     font-weight: 400;
-}
-.globe__icon, .search__icon{
-    cursor: pointer;
-}
-.hover--change{
     transition: 0.3s ease-in-out;
-}
-.hover--change:hover{
-    font-size: 30px;
 }
 .navbar__right .sign__in .signIn__text:hover{
     font-size: 24px;
+    color: var(--hot__red);
 }
-
-
-
-
-
-
-
-
+.hover--change{
+    transition: 0.3s ease-in-out;
+    color: var(--plain__white);
+    cursor: pointer;
+}
+.hover--change:hover{
+    font-size: 30px;
+    color: #FF4655;
+}
 /* ===================================Navbar CSS====================================== */
-
 
 /* ===================================Banner CSS====================================== */
 #banner {
     width: 1920px;
-    height: 1080px;
     margin: 0 auto;
 }
 .banner__image{
@@ -160,12 +155,79 @@ img {
     top: 0;
     z-index: -1;
 }
-
 .banner__image img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+}
+.banner__text{
+    max-width: 611px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 270px;
+}
+.banner__text .bannerText__first{
+    font-family: var(--oswald__font);
+    font-size: 27px;
+    font-weight: 400;
+    color: var(--plain__white);
+}
+.banner__text .bannerText__title{
+    font-family: var(--oswald__font);
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--plain__white);
+}
+.bannerText__title .underline{
+    font-weight: 100;
+}
+.banner__text .bannerText__description{
+    max-width: 521px;
+    font-family: var(--oswald__font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--plain__white);
+}
+.bannerText__btn{
+    width: 128px;
+    height: 50px;
+    font-family: var(--oswald__font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--page__black);
+    margin-top: 48px;
+    background-color: var(--plain__white);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.bannerText__btn:hover{
+    background-color: var(--hot__red);
+    color: var(--plain__white);
+}
+.bannerText__btn:hover i{
+    color: var(--plain__white);
+}
+.social__icon{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 300px;
+}
+.social__icon i{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #D9d9d9;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.social__icon i:hover{
+    background-color: var(--hot__red);
+    color: var(--plain__white);
 }
 /* ===================================Banner CSS====================================== */
 
