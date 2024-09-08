@@ -107,6 +107,9 @@ img {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
+.navbar__menu .menu__items li a{
+    color: var(--plain__white, #FFFFFF);
+}
 .navbar__menu .menu__items li:hover{
     background-color: #FF4655;
     padding: 5px 10px;
@@ -230,6 +233,16 @@ img {
     color: var(--plain__white);
 }
 /* ===================================Banner CSS====================================== */
+
+/* ===================================About-part CSS====================================== */
+
+
+
+
+
+
+
+/* ===================================About-part CSS====================================== */
 
 
 
