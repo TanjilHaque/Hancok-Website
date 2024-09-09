@@ -217,6 +217,7 @@ img {
     gap: 20px;
     align-items: center;
     margin-top: 300px;
+    padding-bottom: 84px;
 }
 .social__icon i{
     height: 35px;
@@ -235,14 +236,124 @@ img {
 /* ===================================Banner CSS====================================== */
 
 /* ===================================About-part CSS====================================== */
+#about-part{
+    padding: 34px 0 82px 0;
+    background-color: var(--page__black, #121212);
+}
+.about__heading{
+    max-width: 518px;
+}
+.about__heading h3{
+    font-family: var(--oswald__font);
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--plain__white, #FFFFFF);
+    margin-bottom: 57px;
+}
+.about__heading span{
+    color: var(--hot__red,#FF4655);
+    font-weight: 400;
+}
+.about__middle{
+    display: flex;
+    gap: 82px;
+}
+.about__middle .about__image{
+    position: relative;
+}
+.about__middle .about__image::before{
+    position: absolute;
+    content: '';
+    width: 163px;
+    height: 7px;
+    background-color: var(--hot__red,#FF4655);
+    top: -7px;
+    left: 0;
+}
+.about__middle .about__image::after{
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 157px;
+    background-color: var(--hot__red,#FF4655);
+    top: -7px;
+    left: -7px;
+}
+.about__middle .content__heading{
+    font-family: var(--oswald__font);
+    color: var(--plain__whitel,#FFFFFF);
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.content__items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content__items li{
+    font-family: var(--barlow__font);
+    font-size: 18px;
+    color: var(--plain__white,#FFFFFF);
+    font-weight: 400;
+}
+.about__content .content__summary{
+    font-family: var(--oswald__font);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--plain__white,#FFFFFF);
+    margin-top: 13px;
+}
+.content--btn{
+    margin-top: 30px;
+    background-color: var(--dark__grey,#212121);
+    color: var(--plain__white,#FFFFFF);
+}
+.about__status{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.status__container{
+    width: 315px;
+    height: 170px;
+    background-color: var(--dark__grey,#212121);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.status__container h3{
+    font-family: var(--barlow__font);
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--plain__white,#FFFFFF);
+    position: relative;
+}
+.status__container h3::after{
+    position: absolute;
+    content: '';
+    bottom: 11px;
+    right: -20px;
+    height: 12px;
+    width: 12px;
+    background-color: var(--hot__red,#FF4655);
+    border-radius: 50%;
+    z-index: 2;
 
-
-
-
-
-
-
+}
+.status__container p{
+    font-family: var(--oswald__font);
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--plain__white,#FFFFFF);
+}
 /* ===================================About-part CSS====================================== */
+
+/* ===================================Popular CSS====================================== */
+/* ===================================Popular CSS====================================== */
 
 
 
