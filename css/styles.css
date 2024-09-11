@@ -353,7 +353,178 @@ img {
 /* ===================================About-part CSS====================================== */
 
 /* ===================================Popular CSS====================================== */
+#popular{
+    padding: 90px;
+    background-color: var(--light__black,#191919);
+}
+.popularWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+}
+.popular__valorant{
+    position: relative;
+    z-index: 2;
+}
+.popular__valorant img{
+    position: relative;
+    z-index: 2;
+    left: 60px;
+}
+.popular__valorant::before {
+    position: absolute;
+    content: '';
+    width: 530px;
+    height: 390px;
+    background-color: var(--hot__red,#FF4655);
+    transform: skew(-16deg);
+    transform-origin: bottom left;
+    bottom: 4px;
+    left: 0px;
+    z-index: 1;
+}
+.popular__right{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.popular__heading h3{
+    font-family: var(--barlow__font);
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--plain__white,#FFFFFF);
+    text-align: end;
+}
+.popular__heading span{
+    font-family: var(--oswald__font);
+    color: var(--hot__red,#FF4655);
+}
+.popular__trending{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.trendingButton__parent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+.trending__btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--plain__white,#FFFFFF);
+    background-color: transparent;
+    color: var(--plain__white,#FFFFFF);
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.trending__btn:hover{
+    background-color: var(--hot__red,#FF4655);
+    border: none;
+}
 /* ===================================Popular CSS====================================== */
+
+/* ===================================Tournament CSS====================================== */
+#tournament{
+    padding: 90px 0;
+    background-color: var(--page__black,#121212);
+}
+.tournament__heading h3{
+    font-family: var(--oswald__font);
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--plain__white,#FFFFFF);
+}
+.tournament__heading span{
+    color: var(--hot__red,#FF4655);
+    font-weight: 400;
+}
+.tournament__heading{
+    margin-bottom: 69px;
+}
+.tournament__videos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 61px;
+}
+.match__title h4{
+    text-align: center;
+    font-family: var(--barlow__font);
+    font-size: 25px;
+    color: var(--plain__white,#FFFFFF);
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+.tournament__matches{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.match__status{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1096px;
+
+}
+.match__primary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.team__first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 121px;
+    width: 426px;
+    height: 118px;
+    background-color: var(--dark__grey,#212121);
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+.team__second{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 121px;
+    width: 426px;
+    height: 118px;
+    background-color: var(--dark__grey,#212121);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+}
+.score{
+    font-family: var(--oswald__font);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--plain__white,#FFFFFF);
+}
+.match__primary h5{
+    font-family: var(--barlow__font);
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--plain__white,#FFFFFF);
+}
+
+
+
+
+
+
+
+
+/* ===================================Tournament CSS====================================== */
 
 
 
