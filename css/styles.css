@@ -1,5 +1,5 @@
 /* ===================================CSS Variables====================================== */
-:root{
+:root {
     --hot__red: #FF4655;
     --plain__white: #FFFFFF;
     --light__gray: #DDDDDD;
@@ -10,9 +10,11 @@
     --icon__black: #212529;
 
 
-    --barlow__font: "Barlow Condensed", system-ui;;
+    --barlow__font: "Barlow Condensed", system-ui;
+    ;
     --oswald__font: "Oswald", system-ui;
 }
+
 /* ===================================CSS Variables====================================== */
 
 /* ===================================Common CSS====================================== */
@@ -55,29 +57,34 @@ img {
     width: 1320px;
     margin: auto;
 }
+
 /* ===================================Common CSS====================================== */
 
 /* ===================================Navbar CSS====================================== */
-#navbar{
+#navbar {
     padding: 25px 0px;
     width: 1920px;
     margin: 0 auto;
 }
-.navbar__wrapper{
+
+.navbar__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navbar__logo{
+
+.navbar__logo {
     position: relative;
 }
-.navbar__logo .hancok{
+
+.navbar__logo .hancok {
     color: var(--plain__white);
     font-family: var(--barlow__font);
     font-weight: 700;
     font-size: 35px;
     line-height: auto;
 }
+
 .navbar__logo .hancok::after {
     position: absolute;
     content: '';
@@ -85,21 +92,24 @@ img {
     right: -20px;
     height: 9px;
     width: 9px;
-    background-color: var(--hot__red,pink);
+    background-color: var(--hot__red, pink);
     border-radius: 50%;
     z-index: 2;
 }
-.navbar__menu{
+
+.navbar__menu {
     position: relative;
     left: -225px;
 }
-.navbar__menu .menu__items{
+
+.navbar__menu .menu__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
-.navbar__menu .menu__items li{
+
+.navbar__menu .menu__items li {
     color: var(--light__gray);
     font-family: var(--oswald__font);
     font-size: 16px;
@@ -107,45 +117,54 @@ img {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.navbar__menu .menu__items li a{
+
+.navbar__menu .menu__items li a {
     color: var(--plain__white, #FFFFFF);
 }
-.navbar__menu .menu__items li:hover{
+
+.navbar__menu .menu__items li:hover {
     background-color: #FF4655;
     padding: 5px 10px;
     border-radius: 20px;
 }
-.navbar__right{
+
+.navbar__right {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 25px;
 }
-.navbar__right .sign__in{
+
+.navbar__right .sign__in {
     display: flex;
     align-items: flex-end;
     cursor: pointer;
 }
-.navbar__right .sign__in .signIn__text{
+
+.navbar__right .sign__in .signIn__text {
     color: var(--plain__white);
     font-family: var(--oswald__font);
     font-size: 16px;
     font-weight: 400;
     transition: 0.3s ease-in-out;
 }
-.navbar__right .sign__in .signIn__text:hover{
+
+.navbar__right .sign__in .signIn__text:hover {
     font-size: 24px;
     color: var(--hot__red);
 }
-.hover--change{
+
+.hover--change {
     transition: 0.3s ease-in-out;
     color: var(--plain__white);
     cursor: pointer;
 }
-.hover--change:hover{
+
+.hover--change:hover {
     font-size: 30px;
     color: #FF4655;
 }
+
 /* ===================================Navbar CSS====================================== */
 
 /* ===================================Banner CSS====================================== */
@@ -153,46 +172,54 @@ img {
     width: 1920px;
     margin: 0 auto;
 }
-.banner__image{
+
+.banner__image {
     position: absolute;
     top: 0;
     z-index: -1;
 }
-.banner__image img{
+
+.banner__image img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
 }
-.banner__text{
+
+.banner__text {
     max-width: 611px;
     display: flex;
     flex-direction: column;
     margin-top: 270px;
 }
-.banner__text .bannerText__first{
+
+.banner__text .bannerText__first {
     font-family: var(--oswald__font);
     font-size: 27px;
     font-weight: 400;
     color: var(--plain__white);
 }
-.banner__text .bannerText__title{
+
+.banner__text .bannerText__title {
     font-family: var(--oswald__font);
     font-size: 60px;
     font-weight: 600;
     color: var(--plain__white);
 }
-.bannerText__title .underline{
+
+.bannerText__title .underline {
     font-weight: 100;
 }
-.banner__text .bannerText__description{
+
+.banner__text .bannerText__description {
     max-width: 521px;
     font-family: var(--oswald__font);
     font-size: 16px;
     font-weight: 400;
     color: var(--plain__white);
 }
-.bannerText__btn{
+
+.bannerText__btn {
     width: 128px;
     height: 50px;
     font-family: var(--oswald__font);
@@ -205,21 +232,25 @@ img {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.bannerText__btn:hover{
+
+.bannerText__btn:hover {
     background-color: var(--hot__red);
     color: var(--plain__white);
 }
-.bannerText__btn:hover i{
+
+.bannerText__btn:hover i {
     color: var(--plain__white);
 }
-.social__icon{
+
+.social__icon {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-top: 300px;
     padding-bottom: 84px;
 }
-.social__icon i{
+
+.social__icon i {
     height: 35px;
     width: 35px;
     border-radius: 50%;
@@ -229,95 +260,111 @@ img {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.social__icon i:hover{
+
+.social__icon i:hover {
     background-color: var(--hot__red);
     color: var(--plain__white);
 }
+
 /* ===================================Banner CSS====================================== */
 
 /* ===================================About-part CSS====================================== */
-#about-part{
+#about-part {
     padding: 34px 0 82px 0;
     background-color: var(--page__black, #121212);
 }
-.about__heading{
+
+.about__heading {
     max-width: 518px;
 }
-.about__heading h3{
+
+.about__heading h3 {
     font-family: var(--oswald__font);
     font-size: 38px;
     font-weight: 600;
     color: var(--plain__white, #FFFFFF);
     margin-bottom: 57px;
 }
-.about__heading span{
-    color: var(--hot__red,#FF4655);
+
+.about__heading span {
+    color: var(--hot__red, #FF4655);
     font-weight: 400;
 }
-.about__middle{
+
+.about__middle {
     display: flex;
     gap: 82px;
 }
-.about__middle .about__image{
+
+.about__middle .about__image {
     position: relative;
 }
-.about__middle .about__image::before{
+
+.about__middle .about__image::before {
     position: absolute;
     content: '';
     width: 163px;
     height: 7px;
-    background-color: var(--hot__red,#FF4655);
+    background-color: var(--hot__red, #FF4655);
     top: -7px;
     left: 0;
 }
-.about__middle .about__image::after{
+
+.about__middle .about__image::after {
     position: absolute;
     content: '';
     width: 7px;
     height: 157px;
-    background-color: var(--hot__red,#FF4655);
+    background-color: var(--hot__red, #FF4655);
     top: -7px;
     left: -7px;
 }
-.about__middle .content__heading{
+
+.about__middle .content__heading {
     font-family: var(--oswald__font);
-    color: var(--plain__whitel,#FFFFFF);
+    color: var(--plain__whitel, #FFFFFF);
     font-size: 27px;
     font-weight: 600;
     margin-bottom: 7px;
 }
-.content__items{
+
+.content__items {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.content__items li{
+
+.content__items li {
     font-family: var(--barlow__font);
     font-size: 18px;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     font-weight: 400;
 }
-.about__content .content__summary{
+
+.about__content .content__summary {
     font-family: var(--oswald__font);
     font-size: 18px;
     font-weight: 400;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     margin-top: 13px;
 }
-.content--btn{
+
+.content--btn {
     margin-top: 30px;
-    background-color: var(--dark__grey,#212121);
-    color: var(--plain__white,#FFFFFF);
+    background-color: var(--dark__grey, #212121);
+    color: var(--plain__white, #FFFFFF);
 }
-.about__status{
+
+.about__status {
     margin-top: 50px;
     display: flex;
     gap: 20px;
 }
-.status__container{
+
+.status__container {
     width: 315px;
     height: 170px;
-    background-color: var(--dark__grey,#212121);
+    background-color: var(--dark__grey, #212121);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -325,86 +372,99 @@ img {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
 }
-.status__container h3{
+
+.status__container h3 {
     font-family: var(--barlow__font);
     font-size: 60px;
     font-weight: 600;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     position: relative;
 }
-.status__container h3::after{
+
+.status__container h3::after {
     position: absolute;
     content: '';
     bottom: 11px;
     right: -20px;
     height: 12px;
     width: 12px;
-    background-color: var(--hot__red,#FF4655);
+    background-color: var(--hot__red, #FF4655);
     border-radius: 50%;
     z-index: 2;
 
 }
-.status__container p{
+
+.status__container p {
     font-family: var(--oswald__font);
     font-size: 18px;
     font-weight: 300;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
 }
+
 /* ===================================About-part CSS====================================== */
 
 /* ===================================Popular CSS====================================== */
-#popular{
+#popular {
     padding: 90px;
-    background-color: var(--light__black,#191919);
+    background-color: var(--light__black, #191919);
 }
-.popularWrapper{
+
+.popularWrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     gap: 20px;
 }
-.popular__valorant{
+
+.popular__valorant {
     position: relative;
     z-index: 2;
 }
-.popular__valorant img{
+
+.popular__valorant img {
     position: relative;
     z-index: 2;
     left: 60px;
 }
+
 .popular__valorant::before {
     position: absolute;
     content: '';
     width: 530px;
     height: 390px;
-    background-color: var(--hot__red,#FF4655);
+    background-color: var(--hot__red, #FF4655);
     transform: skew(-16deg);
     transform-origin: bottom left;
     bottom: 4px;
     left: 0px;
     z-index: 1;
 }
-.popular__right{
+
+.popular__right {
     display: flex;
     flex-direction: column;
     gap: 80px;
 }
-.popular__heading h3{
+
+.popular__heading h3 {
     font-family: var(--barlow__font);
     font-size: 38px;
     font-weight: 600;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     text-align: end;
 }
-.popular__heading span{
+
+.popular__heading span {
     font-family: var(--oswald__font);
-    color: var(--hot__red,#FF4655);
+    color: var(--hot__red, #FF4655);
 }
-.popular__trending{
+
+.popular__trending {
     display: flex;
     align-items: flex-end;
     position: relative;
 }
+
 .trendingButton__parent {
     display: flex;
     flex-direction: column;
@@ -413,118 +473,233 @@ img {
     bottom: 15px;
     right: 20px;
 }
-.trending__btn{
+
+.trending__btn {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid var(--plain__white,#FFFFFF);
+    border: 1px solid var(--plain__white, #FFFFFF);
     background-color: transparent;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     text-align: center;
     line-height: 40px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.trending__btn:hover{
-    background-color: var(--hot__red,#FF4655);
+
+.trending__btn:hover {
+    background-color: var(--hot__red, #FF4655);
     border: none;
 }
+
 /* ===================================Popular CSS====================================== */
 
 /* ===================================Tournament CSS====================================== */
-#tournament{
+#tournament {
     padding: 90px 0;
-    background-color: var(--page__black,#121212);
+    background-color: var(--page__black, #121212);
 }
-.tournament__heading h3{
+
+.tournament__heading h3 {
     font-family: var(--oswald__font);
     font-size: 38px;
     font-weight: 600;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
 }
-.tournament__heading span{
-    color: var(--hot__red,#FF4655);
+
+.tournament__heading span {
+    color: var(--hot__red, #FF4655);
     font-weight: 400;
 }
-.tournament__heading{
+
+.tournament__heading {
     margin-bottom: 69px;
 }
-.tournament__videos{
+
+.tournament__videos {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     margin-bottom: 61px;
+    height: 295px;
 }
-.match__title h4{
+
+.tournament__video {
+    width: 426px;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.tournament__video:hover {
+    height: 295px;
+    filter: grayscale(0%);
+}
+
+.tournament__video i {
+    height: 70px;
+    width: 70px;
+    border: 1px solid var(--plain__white, #FFFFFF);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    color: var(--plain__white, #FFFFFF);
+}
+
+.tournament__video .video__title {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+.video__title h4 {
+    font-family: var(--barlow__font);
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--plain__white, #FFFFFF);
+}
+
+.video__title p {
+    font-family: var(--oswald__font);
+    font-weight: 300;
+    color: var(--plain__white, #FFFFFF);
+    font-size: 16px;
+}
+
+.tournament__video span {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    font-family: var(--oswald__font);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--plain__white, #FFFFFF);
+}
+
+.tournament__video span::after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: var(--hot__red, #FF4655);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+    z-index: 4;
+}
+
+.video--one {
+    background-image: url("/images/tournament/tour1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video--two {
+    background-image: url("/images/tournament/tour2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video--three {
+    background-image: url("/images/tournament/tour3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.match__title h4 {
     text-align: center;
     font-family: var(--barlow__font);
     font-size: 25px;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     font-weight: 500;
     letter-spacing: 2px;
     margin-bottom: 50px;
 }
-.tournament__matches{
+
+.tournament__matches {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.match__status{
+
+.match__status {
     display: flex;
     flex-direction: column;
     gap: 60px;
     max-width: 1096px;
 
 }
-.match__primary{
+
+.match__primary {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 80px;
+    
 }
-.team__first{
+
+.team__first {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 121px;
     width: 426px;
     height: 118px;
-    background-color: var(--dark__grey,#212121);
+    background-color: var(--dark__grey, #212121);
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    transition: 0.3s ease-in-out;
 }
-.team__second{
+.team__first:hover{
+    background-color: var(--hot__red,#FF4655);
+}
+.team__second {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 121px;
     width: 426px;
     height: 118px;
-    background-color: var(--dark__grey,#212121);
+    background-color: var(--dark__grey, #212121);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    transition: 0.3s linear;
 }
-.score{
+.team__second:hover{
+    background-color: var(--hot__red,#FF4655);
+}
+.score {
     font-family: var(--oswald__font);
     font-size: 40px;
     font-weight: 500;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
 }
-.match__primary h5{
+
+.match__primary h5 {
     font-family: var(--barlow__font);
     font-weight: 500;
     font-size: 32px;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
+}
+
+/* ===================================Tournament CSS====================================== */
+
+/* ===================================Sale CSS====================================== */
+#sale {
+    padding: 90px 0;
+    background-color: var(--light__black);
 }
 
 
 
 
 
-
-
-
-/* ===================================Tournament CSS====================================== */
-
-
-
+/* ===================================Sale CSS====================================== */
