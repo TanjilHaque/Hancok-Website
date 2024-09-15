@@ -25,6 +25,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -645,7 +649,7 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 80px;
-    
+
 }
 
 .team__first {
@@ -659,9 +663,11 @@ img {
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     transition: 0.3s ease-in-out;
 }
-.team__first:hover{
-    background-color: var(--hot__red,#FF4655);
+
+.team__first:hover {
+    background-color: var(--hot__red, #FF4655);
 }
+
 .team__second {
     display: flex;
     flex-direction: row-reverse;
@@ -673,9 +679,11 @@ img {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
     transition: 0.3s linear;
 }
-.team__second:hover{
-    background-color: var(--hot__red,#FF4655);
+
+.team__second:hover {
+    background-color: var(--hot__red, #FF4655);
 }
+
 .score {
     font-family: var(--oswald__font);
     font-size: 40px;
@@ -697,103 +705,117 @@ img {
     padding: 90px 0;
     background-color: var(--light__black);
 }
-.saleWrapper{
+
+.saleWrapper {
     display: flex;
     flex-direction: column;
 }
-.sale__heading h2{
+
+.sale__heading h2 {
     font-family: var(--barlow__font);
     font-size: 38px;
     font-weight: 600;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     text-align: end;
 }
-.sale__heading span{
+
+.sale__heading span {
     font-family: var(--oswald__font);
     font-weight: 400;
-    color: var(--hot__red,#FF4655);
+    color: var(--hot__red, #FF4655);
 }
-.sale__cards{
+
+.sale__cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
 }
-.card__item{
+
+.card__item {
     width: 315px;
     height: 568px;
 }
 
-.card__image{
+.card__image {
     cursor: pointer;
 }
-.item__heading h4{
+
+.item__heading h4 {
     font-family: var(--barlow__font);
     font-weight: 600;
     font-size: 22px;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     margin-bottom: 20px;
 }
-.item__company p{
+
+.item__company p {
     font-family: var(--oswald__font);
     font-weight: 400;
     font-size: 16px;
-    color: var(--border__grey,#666666);
+    color: var(--border__grey, #666666);
     margin-bottom: 20px;
 }
-.item__price{
+
+.item__price {
     max-width: 141px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.item__price .discount{
+
+.item__price .discount {
     width: 40px;
     height: 30px;
-    background-color: var(--hot__red,#FF4655);
+    background-color: var(--hot__red, #FF4655);
     text-align: center;
     line-height: 30px;
     font-family: var(--oswald__font);
     font-weight: 400;
     font-size: 14px;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
 }
-.item__price .old__price{
+
+.item__price .old__price {
     width: 46px;
     height: 24px;
     font-family: var(--oswald__font);
     font-weight: 400;
     font-size: 16px;
-    color: var(--border__grey,#666666);
+    color: var(--border__grey, #666666);
     text-align: center;
     line-height: 24px;
 }
-.item__price .current__price{
+
+.item__price .current__price {
     width: 34px;
     height: 24px;
     font-family: var(--oswald__font);
     font-weight: 400;
     font-size: 16px;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     text-align: center;
     line-height: 24px;
 }
-.sale__catalog h5{
+
+.sale__catalog h5 {
     font-family: var(--barlow__font);
     font-weight: 500;
     font-size: 20px;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     margin-bottom: 30px;
 }
-.catalog__part{
-    background-color: var(--dark__grey,#212121);
+
+.catalog__part {
+    background-color: var(--dark__grey, #212121);
     padding-top: 45px;
     padding-left: 45px;
     display: flex;
     height: 454px;
 
 }
-.catalog__wrapper{
+
+.catalog__wrapper {
     width: 601px;
     height: 278px;
     display: flex;
@@ -801,73 +823,338 @@ img {
     justify-content: flex-start;
     align-items: flex-start;
 }
-.catalog__title p{
+
+.catalog__title p {
     font-family: var(--oswald__font);
     font-weight: 500;
     font-size: 16px;
-    color: var(--hot__red,#FF4655);
+    color: var(--hot__red, #FF4655);
     margin-bottom: 15px;
 }
-.catalog__heading h6{
+
+.catalog__heading h6 {
     font-family: var(--barlow__font);
     font-size: 38px;
     font-weight: 600;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-.catalog__summary{
+
+.catalog__summary {
     font-family: var(--oswald__font);
     font-size: 16px;
     font-weight: 600;
-    color: var(--border__grey,#666666);
+    color: var(--border__grey, #666666);
     margin-bottom: 25px;
 }
-.catalog__btn{
+
+.catalog__btn {
     width: 128px;
     height: 50px;
-    background-color: var(--page__black,#121212);
+    background-color: var(--page__black, #121212);
     font-family: var(--oswald__font);
     font-weight: 500;
     font-size: 16px;
-    color: var(--plain__white,#FFFFFF);
+    color: var(--plain__white, #FFFFFF);
     border: none;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.catalog__btn:hover{
-    background-color: var(--hot__red,#FF4655);
+
+.catalog__btn:hover {
+    background-color: var(--hot__red, #FF4655);
 }
-.catalog__images{
+
+.catalog__images {
     width: 426px;
     height: 370px;
     position: relative;
     margin-left: 136px;
 }
 
-.image__container .item4{
+.image__container .item4 {
     position: absolute;
     top: 0;
     left: 84px;
 }
+
 .image__container .item1 {
     position: absolute;
     top: 17px;
     left: 35px;
 }
-.image__container .item2{
+
+.image__container .item2 {
     position: absolute;
     top: 17px;
     right: 35px;
 }
-.image__container .item5{
+
+.image__container .item5 {
     position: absolute;
     top: 30px;
     left: 0;
 }
-.image__container .item3{
+
+.image__container .item3 {
     position: absolute;
     top: 30px;
     right: 0px;
 }
+
 /* ===================================Sale CSS====================================== */
+
+/* ===================================Store CSS====================================== */
+#store {
+    padding: 90px 0;
+    background-color: var(--page__black, #121212);
+    position: relative;
+}
+
+#store .container {
+    padding: 0 10px;
+}
+
+.store__heading h2 {
+    font-family: var(--oswald__font);
+    font-weight: 600;
+    font-size: 38px;
+    color: var(--plain__white, #FFFFFF);
+    margin-bottom: 103px;
+}
+
+.store__heading span {
+    color: var(--hot__red, #FF4655);
+}
+
+.store__products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.product__content {
+    background-color: var(--dark__grey, #212121);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 315px;
+    height: 465px;
+    padding: 23px 0;
+}
+
+.product__content h3 {
+    font-family: var(--oswald__font);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--plain__white, #FFFFFF);
+}
+
+.product__content .product__title {
+    font-family: var(--oswald__font);
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--plain__white, #FFFFFF);
+}
+
+.product__content .add__cart {
+    font-family: var(--oswald__font);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--hot__red, #FF4655);
+}
+
+.store__btn {
+    display: flex;
+    gap: 1320px;
+    position: absolute;
+    top: 480px;
+    left: 250px;
+}
+
+.store__btn .btn {
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--plain__white, #FFFFFF);
+    border-radius: 50%;
+    color: var(--plain__white, #FFFFFF);
+    text-align: center;
+    line-height: 50px;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.store__btn .btn:hover {
+    background-color: var(--hot__red, #FF4655);
+}
+
+/* ===================================Store CSS====================================== */
+
+/* ===================================Team CSS====================================== */
+#team {
+    padding: 100px 0;
+    background-color: var(--light__black, #191919);
+}
+
+.team__heading {
+    text-align: end;
+    margin-bottom: 50px;
+}
+
+.team__heading h2 {
+    font-family: var(--barlow__font);
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--plain__white, #FFFFFF);
+}
+
+.team__heading span {
+    font-family: var(--oswald__font);
+    color: var(--hot__red, #FF4655);
+    font-weight: 400;
+}
+
+.--teamGames {
+    width: 650px;
+    height: 428.35px;
+    display: flex;
+    align-items: flex-end;
+    filter: grayscale(100%);
+    transition: 0.5s ease-in-out;
+
+}
+.--teamGames:hover{
+    filter: grayscale(0%);
+}
+
+.team__games1 {
+    background-image: url("/images/team/team-1.png");
+}
+
+.team__games2 {
+    background-image: url("/images/team/team-2.png");
+}
+
+.team__games3 {
+    background-image: url("/images/team/team-3.png");
+}
+
+.team__games4 {
+    background-image: url("/images/team/team-4.png");
+}
+
+.team__part {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gameContainer {
+    width: 650px;
+    height: 89.65px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    bottom: 0px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+
+}
+
+.gameContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #252424;
+    width: 100%;
+    height: 100%;
+    filter: blur(3px); /* Apply blur */
+    opacity: 0.3;
+    z-index: -1;
+}
+.--teamGames:hover .gameContainer{
+    bottom: 0;
+    height: 212.18px;
+
+}
+.game__content {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 106px;
+}
+
+.game__content h3 {
+    font-family: var(--barlow__font);
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--plain__white, #FFFFFF);
+}
+
+.game__content p {
+    font-family: var(--oswald__font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--plain__white, #FFFFFF);
+    margin-bottom: 20px;
+}
+.gameContent__heading{
+    position: relative;
+    bottom: -105px;
+    left: 0;
+}
+.--teamGames:hover .gameContent__heading{
+    bottom: 0;
+}
+.gameContent__summary{
+    visibility: hidden;
+}
+.--teamGames:hover .gameContent__summary{
+    visibility: visible;
+}
+.knowMore__btn{
+    visibility: hidden;
+}
+.--teamGames:hover .knowMore__btn{
+    visibility: visible;
+}
+.game__icons{
+    visibility: hidden;
+}
+.--teamGames:hover .game__icons{
+    visibility: visible;
+}
+.knowMore__btn {
+    width: 105px;
+    height: 32.66px;
+    border: none;
+    background-color: var(--hot__red, #FF4655);
+    font-family: var(--oswald__font);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--plain__white, #FFFFFF);
+    cursor: pointer;
+}
+
+.game__icons i {
+    color: var(--plain__white, #FFFFFF);
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: var(--hot__red, #FF4655);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* ===================================Team CSS====================================== */
